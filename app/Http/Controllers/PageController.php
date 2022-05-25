@@ -10,7 +10,6 @@ class PageController extends Controller
 {
     public function index(){
         $movielist = Movie::all();
-        dump($movielist);
         return view('movies', compact('movielist'));
     }
 }

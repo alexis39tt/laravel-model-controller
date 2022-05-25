@@ -1,0 +1,47 @@
+$font1: 'Lexend Deca', sans-serif;
+$font2: 'Headland One', serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+body {
+    color: #1c1c1c;
+    background-color: #1c1c1c;
+    font-family: $font1;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 70px;
+
+    .movie {
+        width: 400px;
+        height: 200px;
+        background: rgb(191, 191, 191);
+        background: radial-gradient(circle, rgb(173, 173, 173) 0%, rgb(122, 122, 122) 100%);
+        box-shadow: 0px 3px 10px 0px black;
+        border-radius: 7.5px;
+        padding: 10px;
+        margin: 20px;
+        cursor: pointer;
+        transition: 0.2s;
+
+        &:hover {
+            filter: brightness(1.2);
+            transform: scale(1.1);
+        }
+
+        .title {
+            color: black;
+            font-weight: bold;
+            font-size: 1.8rem;
+            font-family: $font2;
+            margin-bottom: 10px;
+        }
+    }
+}
